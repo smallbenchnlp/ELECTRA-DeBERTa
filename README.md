@@ -1,6 +1,8 @@
-<img src="./electra.png"></img>
+<img src="./electra-deberta.png"></img>
 
-## Electra - Pytorch
+## ELECTRA-DeBERTa - Pytorch
+
+forked from [electra-pytorch](https://github.com/lucidrains/electra-pytorch)
 
 A simple working wrapper for fast pretraining of language models as detailed in <a href="https://arxiv.org/abs/2003.10555">this paper</a>. It speeds up training (in comparison to normal masked language modeling) by a factor of 4x, and eventually reaches better performance if trained for even longer. Special thanks to <a href="https://github.com/enijkamp">Erik Nijkamp</a> for taking the time to replicate the results for GLUE.
 
@@ -190,6 +192,30 @@ $ python examples/glue/run.py --model_name_or_path output/yyyy-mm-dd-hh-mm-ss/ck
 ```
 
 ## Citations
+
+```bibtex
+@misc{kanakarajan2021smallbench,
+      title={Small-Bench NLP: Benchmark for small single GPU trained models in Natural Language Processing}, 
+      author={Kamal Raj Kanakarajan and Bhuvana Kundumani and Malaikannan Sankarasubbu},
+      year={2021},
+      eprint={2109.10847},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+
+```bibtex
+@misc{he2020deberta,
+    title={DeBERTa: Decoding-enhanced BERT with Disentangled Attention},
+    author={Pengcheng He and Xiaodong Liu and Jianfeng Gao and Weizhu Chen},
+    year={2020},
+    eprint={2006.03654},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
+
+
 
 ```bibtex
 @misc{clark2020electra,
